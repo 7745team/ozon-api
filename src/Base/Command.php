@@ -16,9 +16,12 @@ class Command extends ConsoleCommand
         $this->ozonApi = app(OzonApi::class);
     }
 
-    protected function success($endTime, $startTime): int
+    protected function success($startTime, $endTime): int
     {
-        $this->info("Compiled Successfully in " . $endTime->diffInSeconds($startTime) . " seconds");
+        // Carbon 2 возвращает abs int, Carbon 3 (Laravel 11+) — знаковый float
+        $seconds = (int) round(abs($endTime->diffInSeconds($startTime)));
+
+        $this->info("Compiled Successfully in " . $seconds . " seconds");
 
         return CommandAlias::SUCCESS;
     }

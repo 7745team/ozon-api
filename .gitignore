@@ -20,3 +20,5 @@ yarn-error.log
 composer.lock
 error_log
 _*
+.phpunit.result.cache
+.phpunit.cache/
