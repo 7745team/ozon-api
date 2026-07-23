@@ -74,7 +74,7 @@ class OzonApi
         return $this->sendRequest($url, $data);
     }
 
-    public function getProductInfo(string $offerId = null, int $ozonProductId = null, int $ozonSku = null)
+    public function getProductInfo(?string $offerId = null, ?int $ozonProductId = null, ?int $ozonSku = null)
     {
         $url = 'https://api-seller.ozon.ru/v3/product/info';
 
@@ -216,7 +216,7 @@ class OzonApi
         ];
     }
 
-    protected function sendRequest($url, array $data = null)
+    protected function sendRequest($url, ?array $data = null)
     {
         $curl = curl_init($url);
 
