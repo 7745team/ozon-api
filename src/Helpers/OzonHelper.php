@@ -48,7 +48,7 @@ class OzonHelper
         return $this->getImportedProductsIdsRecursively();
     }
 
-    protected function getImportedProductsIdsRecursively(array &$resultArray = [], string $lastId = null, int $left = null): array
+    protected function getImportedProductsIdsRecursively(array &$resultArray = [], ?string $lastId = null, ?int $left = null): array
     {
         $response = $this->ozonApi->getProductList($lastId ?? null);
         $data = $this::ozonApiResponseToArray($response);
