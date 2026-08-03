@@ -2,6 +2,7 @@
 
 namespace Tdkomplekt\OzonApi\Helpers;
 
+use Tdkomplekt\OzonApi\Exceptions\OzonApiException;
 use Tdkomplekt\OzonApi\Models\OzonTask;
 use Tdkomplekt\OzonApi\OzonApi;
 
@@ -53,20 +54,28 @@ class OzonHelper
         $response = $this->ozonApi->getProductList($lastId ?? null);
         $data = $this::ozonApiResponseToArray($response);
 
-        if(isset($data['result'])) {
-            $items = $data['result']['items'];
-            $total = $data['result']['total'];
-            $lastId = $data['result']['last_id'];
+        if(!isset($data['result']['items'])) {
+            throw new OzonApiException(sprintf(
+                'Ozon API product/list: некорректный ответ для клиента %s: %s',
+                $this->ozonApi->getClientId(),
+                is_string($response) && $response !== '' ? mb_substr($response, 0, 500) : var_export($response, true)
+            ));
+        }
 
-            $left = $left ?? $total;
-            foreach ($items as $item) {
-                $resultArray[$item['offer_id']] = $item['product_id'];
-            }
-            $left = $left - count($items);
+        $items = $data['result']['items'];
+        $total = $data['result']['total'] ?? count($items);
+        $lastId = $data['result']['last_id'] ?? '';
 
-            if ($left > 0) {
-                $resultArray = self::getImportedProductsIdsRecursively($resultArray, $lastId, $left);
-            }
+        $left = $left ?? $total;
+        foreach ($items as $item) {
+            $resultArray[$item['offer_id']] = $item['product_id'];
+        }
+        $left = $left - count($items);
+
+        // count($items) и last_id в условии — защита от бесконечной рекурсии,
+        // если total в ответе не согласуется с фактическим числом позиций
+        if ($left > 0 && $lastId !== '' && count($items) > 0) {
+            $resultArray = self::getImportedProductsIdsRecursively($resultArray, $lastId, $left);
         }
 
         return $resultArray;
@@ -74,6 +83,12 @@ class OzonHelper
 
     protected static function ozonApiResponseToArray($ozonApiResponse): array
     {
-        return json_decode($ozonApiResponse, true);
+        if (!is_string($ozonApiResponse) || $ozonApiResponse === '') {
+            return [];
+        }
+
+        $data = json_decode($ozonApiResponse, true);
+
+        return is_array($data) ? $data : [];
     }
 }
