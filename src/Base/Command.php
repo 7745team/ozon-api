@@ -1,10 +1,10 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Base;
+namespace Team7745\OzonApi\Base;
 
 use Illuminate\Console\Command as ConsoleCommand;
 use Symfony\Component\Console\Command\Command as CommandAlias;
-use Tdkomplekt\OzonApi\OzonApi;
+use Team7745\OzonApi\OzonApi;
 
 class Command extends ConsoleCommand
 {

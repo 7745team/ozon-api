@@ -1,6 +1,6 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Facades;
+namespace Team7745\OzonApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

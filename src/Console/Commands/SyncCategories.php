@@ -1,9 +1,9 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Console\Commands;
+namespace Team7745\OzonApi\Console\Commands;
 
-use Tdkomplekt\OzonApi\Base\Command;
-use Tdkomplekt\OzonApi\Models\OzonCategory;
+use Team7745\OzonApi\Base\Command;
+use Team7745\OzonApi\Models\OzonCategory;
 
 class SyncCategories extends Command
 {

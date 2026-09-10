@@ -11,7 +11,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require tdkomplekt/ozon-api
+$ composer require 7745team/ozon-api
 $ php artisan migrate
 $ php artisan vendor:publish 
 ```
@@ -56,14 +56,14 @@ If you discover any security related issues, please email zhen.kib@gmail.com ins
 
 MIT. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/tdkomplekt/ozon-api.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/tdkomplekt/ozon-api.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/tdkomplekt/ozon-api/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/7745team/ozon-api.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/7745team/ozon-api.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/7745team/ozon-api/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/tdkomplekt/ozon-api
-[link-downloads]: https://packagist.org/packages/tdkomplekt/ozon-api
-[link-travis]: https://travis-ci.org/tdkomplekt/ozon-api
+[link-packagist]: https://packagist.org/packages/7745team/ozon-api
+[link-downloads]: https://packagist.org/packages/7745team/ozon-api
+[link-travis]: https://travis-ci.org/7745team/ozon-api
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/tdkomplekt
+[link-author]: https://github.com/7745team
 [link-contributors]: ../../contributors

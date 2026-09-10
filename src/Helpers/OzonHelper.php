@@ -1,10 +1,10 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Helpers;
+namespace Team7745\OzonApi\Helpers;
 
-use Tdkomplekt\OzonApi\Exceptions\OzonApiException;
-use Tdkomplekt\OzonApi\Models\OzonTask;
-use Tdkomplekt\OzonApi\OzonApi;
+use Team7745\OzonApi\Exceptions\OzonApiException;
+use Team7745\OzonApi\Models\OzonTask;
+use Team7745\OzonApi\OzonApi;
 
 class OzonHelper
 {

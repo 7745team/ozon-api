@@ -1,14 +1,14 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Jobs;
+namespace Team7745\OzonApi\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Tdkomplekt\OzonApi\Models\OzonTask;
-use Tdkomplekt\OzonApi\OzonApi;
+use Team7745\OzonApi\Models\OzonTask;
+use Team7745\OzonApi\OzonApi;
 use Throwable;
 
 class OzonCheckTaskResultJob implements ShouldQueue

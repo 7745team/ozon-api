@@ -1,10 +1,10 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Tests;
+namespace Team7745\OzonApi\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Tdkomplekt\OzonApi\Facades\OzonApi;
-use Tdkomplekt\OzonApi\OzonApiServiceProvider;
+use Team7745\OzonApi\Facades\OzonApi;
+use Team7745\OzonApi\OzonApiServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {

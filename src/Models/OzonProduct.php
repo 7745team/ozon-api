@@ -1,10 +1,10 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Models;
+namespace Team7745\OzonApi\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Tdkomplekt\OzonApi\Base\Model;
+use Team7745\OzonApi\Base\Model;
 
 class OzonProduct extends Model
 {

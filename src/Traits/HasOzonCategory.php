@@ -1,8 +1,8 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Traits;
+namespace Team7745\OzonApi\Traits;
 
-use Tdkomplekt\OzonApi\Models\OzonCategory;
+use Team7745\OzonApi\Models\OzonCategory;
 
 trait HasOzonCategory
 {

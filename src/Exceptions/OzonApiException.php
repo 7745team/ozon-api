@@ -1,6 +1,6 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Exceptions;
+namespace Team7745\OzonApi\Exceptions;
 
 use RuntimeException;
 

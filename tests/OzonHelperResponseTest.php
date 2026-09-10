@@ -1,11 +1,11 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Tests;
+namespace Team7745\OzonApi\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use Tdkomplekt\OzonApi\Exceptions\OzonApiException;
-use Tdkomplekt\OzonApi\Helpers\OzonHelper;
-use Tdkomplekt\OzonApi\OzonApi;
+use Team7745\OzonApi\Exceptions\OzonApiException;
+use Team7745\OzonApi\Helpers\OzonHelper;
+use Team7745\OzonApi\OzonApi;
 
 class OzonHelperResponseTest extends BaseTestCase
 {

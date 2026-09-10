@@ -1,5 +1,5 @@
 {
-    "name": "tdkomplekt/ozon-api",
+    "name": "7745team/ozon-api",
     "description": ":package_description",
     "license": "MIT",
     "authors": [
@@ -8,7 +8,7 @@
             "email": "admin@7745.by"
         }
     ],
-    "homepage": "https://github.com/tdkomplekt/ozon-api",
+    "homepage": "https://github.com/7745team/ozon-api",
     "keywords": ["Laravel", "OzonApi"],
     "require": {
         "illuminate/support": "~7|~8|~9|~10|~11|~12|~13"
@@ -19,21 +19,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Tdkomplekt\\OzonApi\\": "src/"
+            "Team7745\\OzonApi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tdkomplekt\\OzonApi\\Tests\\": "tests"
+            "Team7745\\OzonApi\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tdkomplekt\\OzonApi\\OzonApiServiceProvider"
+                "Team7745\\OzonApi\\OzonApiServiceProvider"
             ],
             "aliases": {
-                "OzonApi": "Tdkomplekt\\OzonApi\\Facades\\OzonApi"
+                "OzonApi": "Team7745\\OzonApi\\Facades\\OzonApi"
             }
         }
     }
