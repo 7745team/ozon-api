@@ -1,6 +1,6 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Tests;
+namespace Team7745\OzonApi\Tests;
 
 use Illuminate\Console\OutputStyle;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,14 +12,14 @@ use ReflectionMethod;
 use Symfony\Component\Console\Command\Command as CommandAlias;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
-use Tdkomplekt\OzonApi\Console\Commands\TablesRefresh;
-use Tdkomplekt\OzonApi\Facades\OzonApi as OzonApiFacade;
-use Tdkomplekt\OzonApi\Helpers\OzonHelper;
-use Tdkomplekt\OzonApi\Models\OzonAttribute;
-use Tdkomplekt\OzonApi\Models\OzonCategory;
-use Tdkomplekt\OzonApi\Models\OzonProduct;
-use Tdkomplekt\OzonApi\Models\OzonTask;
-use Tdkomplekt\OzonApi\OzonApi;
+use Team7745\OzonApi\Console\Commands\TablesRefresh;
+use Team7745\OzonApi\Facades\OzonApi as OzonApiFacade;
+use Team7745\OzonApi\Helpers\OzonHelper;
+use Team7745\OzonApi\Models\OzonAttribute;
+use Team7745\OzonApi\Models\OzonCategory;
+use Team7745\OzonApi\Models\OzonProduct;
+use Team7745\OzonApi\Models\OzonTask;
+use Team7745\OzonApi\OzonApi;
 
 class PackageSmokeTest extends TestCase
 {

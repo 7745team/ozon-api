@@ -1,6 +1,6 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Models;
+namespace Team7745\OzonApi\Models;
 
 use Schema;
 use Illuminate\Database\Eloquent\Builder;
@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
-use Tdkomplekt\OzonApi\Base\Model;
+use Team7745\OzonApi\Base\Model;
 
 class OzonCategory extends Model
 {

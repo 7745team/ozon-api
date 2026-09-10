@@ -1,6 +1,6 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Base;
+namespace Team7745\OzonApi\Base;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 

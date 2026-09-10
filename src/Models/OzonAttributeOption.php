@@ -1,8 +1,8 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Models;
+namespace Team7745\OzonApi\Models;
 
-use Tdkomplekt\OzonApi\Base\Model;
+use Team7745\OzonApi\Base\Model;
 
 class OzonAttributeOption extends Model
 {

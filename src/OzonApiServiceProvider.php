@@ -1,12 +1,12 @@
 <?php
 
-namespace Tdkomplekt\OzonApi;
+namespace Team7745\OzonApi;
 
 use Illuminate\Support\ServiceProvider;
-use Tdkomplekt\OzonApi\Console\Commands\TablesRefresh;
-use Tdkomplekt\OzonApi\Console\Commands\SyncAttributes;
-use Tdkomplekt\OzonApi\Console\Commands\SyncCategories;
-use Tdkomplekt\OzonApi\Console\Commands\SyncOptions;
+use Team7745\OzonApi\Console\Commands\TablesRefresh;
+use Team7745\OzonApi\Console\Commands\SyncAttributes;
+use Team7745\OzonApi\Console\Commands\SyncCategories;
+use Team7745\OzonApi\Console\Commands\SyncOptions;
 
 class OzonApiServiceProvider extends ServiceProvider
 {
@@ -17,8 +17,8 @@ class OzonApiServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'tdkomplekt');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'tdkomplekt');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', '7745team');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', '7745team');
          $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
@@ -77,17 +77,17 @@ class OzonApiServiceProvider extends ServiceProvider
 
         // Publishing the views.
         /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/tdkomplekt'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/7745team'),
         ], 'ozon-api.views');*/
 
         // Publishing assets.
         /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/tdkomplekt'),
+            __DIR__.'/../resources/assets' => public_path('vendor/7745team'),
         ], 'ozon-api.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/tdkomplekt'),
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/7745team'),
         ], 'ozon-api.views');*/
 
         // Registering package commands.

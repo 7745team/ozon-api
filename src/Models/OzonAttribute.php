@@ -1,11 +1,11 @@
 <?php
 
-namespace Tdkomplekt\OzonApi\Models;
+namespace Team7745\OzonApi\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Tdkomplekt\OzonApi\Base\Model;
+use Team7745\OzonApi\Base\Model;
 
 class OzonAttribute extends Model
 {

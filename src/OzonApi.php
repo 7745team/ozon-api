@@ -1,8 +1,8 @@
 <?php
 
-namespace Tdkomplekt\OzonApi;
+namespace Team7745\OzonApi;
 
-use Tdkomplekt\OzonApi\Models\OzonProduct;
+use Team7745\OzonApi\Models\OzonProduct;
 
 class OzonApi
 {
