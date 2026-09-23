@@ -26,11 +26,15 @@ class OzonProduct extends Model
         return $this->hasOne(OzonCategory::class, 'id', 'category_id');
     }
 
+    /**
+     * Значения атрибута карточки; пустой массив, если атрибут у товара не заполнен —
+     * вызывающие перебирают все атрибуты категории, а заполнена обычно только часть.
+     */
     public function getOzonAttributeValuesById($attributeId)
     {
-        $collection = collect($this->attributesToArray()['attributes']);
+        $collection = collect($this->attributesToArray()['attributes'] ?? []);
         $attributeData = $collection->firstWhere('id', $attributeId);
-        return $attributeData['values'];
+        return $attributeData['values'] ?? [];
     }
 
     public function validate(): bool
